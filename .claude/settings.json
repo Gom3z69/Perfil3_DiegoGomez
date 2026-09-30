@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node -v)",
+      "PowerShell(npm -v)",
+      "PowerShell($r = Invoke-RestMethod \"https://dragonball-api.com/api/planets?limit=50\"; $r.meta | ConvertTo-Json; $r.items | Select-Object -First 2 | ConvertTo-Json; $r.items.Count)",
+      "PowerShell(npx --yes create-expo-app@latest app-tmp --template blank --no-install)",
+      "WebFetch(domain:docs.expo.dev)",
+      "PowerShell(npm install)",
+      "PowerShell(npx expo install @react-navigation/native @react-navigation/native-stack react-native-screens react-native-safe-area-context expo-splash-screen)",
+      "PowerShell($s = \"C:\\\\Users\\\\diego\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-diego-Desktop-Perfil3-DiegoGomez\\\\7b7ca2c3-5b01-4971-8302-d0c0978ddc28\\\\scratchpad\"; New-Item -ItemType Directory -Force \"$s\\\\out\" | Out-Null; node \"$s\\\\icons.js\" \"$s\\\\out\")",
+      "PowerShell($s = \"C:\\\\Users\\\\diego\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-diego-Desktop-Perfil3-DiegoGomez\\\\7b7ca2c3-5b01-4971-8302-d0c0978ddc28\\\\scratchpad\"; node \"$s\\\\icons.js\" \"$s\\\\out\")",
+      "PowerShell(npx expo-doctor)",
+      "PowerShell(npx expo export --platform android --output-dir \"C:\\\\Users\\\\diego\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-diego-Desktop-Perfil3-DiegoGomez\\\\7b7ca2c3-5b01-4971-8302-d0c0978ddc28\\\\scratchpad\\\\dist\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\diego\\AppData\\Local\\Temp\\claude\\c--Users-diego-Desktop-Perfil3-DiegoGomez\\7b7ca2c3-5b01-4971-8302-d0c0978ddc28\\scratchpad\\out"
+    ]
+  }
+}
